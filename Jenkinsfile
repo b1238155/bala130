@@ -17,5 +17,11 @@ pipeline {
                 sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash'
             }
         }
+
+        stage('Install app dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
     }
 }
