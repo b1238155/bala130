@@ -40,7 +40,7 @@ pipeline {
             steps {
                 script {
                     sh 'mkdir -p ~/.ssh'
-                    sshagent(credentials:['e2ef3ca2-72c0-4224-9924-4d660538e9a2']) {
+                    sshagent(credentials:['10c3879e-70a2-47fd-9049-2fca1f090249	']) {
                         sh 'ssh-keyscan -H 13.233.97.41 >> ~/.ssh/known-hosts'
                         sh 'scp -r ./build/* ubuntu@13.233.97.41:/home/ubuntu'
                     }
