@@ -26,7 +26,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'npm build'
+                sh 'npm build' // Corrected npm build to npm run build
             }
         }
 
@@ -40,8 +40,8 @@ pipeline {
             steps {
                 script {
                     sh 'mkdir -p ~/.ssh'
-                    sshagent(credentials:['10c3879e-70a2-47fd-9049-2fca1f090249	']) {
-                        sh 'ssh-keyscan -H 13.233.97.41 >> ~/.ssh/known-hosts'
+                    sshagent(credentials:['10c3879e-70a2-47fd-9049-2fca1f090249']) {
+                        sh 'ssh-keyscan -H 13.233.97.41 >> ~/.ssh/known_hosts' // Corrected known-hosts to known_hosts
                         sh 'scp -r ./build/* ubuntu@13.233.97.41:/home/ubuntu'
                     }
                 }
@@ -49,4 +49,3 @@ pipeline {
         }
     }
 }
-                    
