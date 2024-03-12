@@ -12,7 +12,7 @@ pipeline {
             }
         }
 
-        stages('Install NVM') {
+        stage('Install NVM') {
             steps {
                 sh 'curl -o- https://githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh/bash'
             }
