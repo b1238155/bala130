@@ -1,0 +1,71 @@
+/* Remove default button styles for ReactPaginate */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+/* Use !important to override default styles */
+.pagination li a {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Apply custom styles to the button */
+.pagination li a {
+  background-color: #fff !important; /* Set your preferred background color */
+ /* Set your preferred border styles */
+  border-radius: 5px !important; /* Add rounded corners if desired */
+  color: #333 !important; /* Set your preferred text color */
+  padding: 5px 10px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s !important;
+}
+
+/* Custom styles for the active page */
+.pagination li.active a {
+  background-color: #9AC037 !important;
+  border-color: #9AC037 !important;
+  color: #fff !important;
+}
+
+/* Hover styles */
+.pagination li a:hover {
+  /* background-color: #9AC037 !important;
+  border-color: #9AC037 !important;  */
+  color: #fff !important; /* Change text color on hover */
+}
+.custom-previous-button {
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none !important;
+  /* transition: background-color 0.3s, border-color 0.3s, color 0.3s; */
+}
+
+.custom-previous-button:hover {
+  /* background-color: #9AC037; */
+  /* border-color: #9AC037; */
+  color: #fff;
+}
+
+.custom-next-button {
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.custom-next-button:hover {
+  /* background-color: #9AC037;
+  border-color: #9AC037; */
+   color: #000; 
+}
