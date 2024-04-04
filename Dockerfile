@@ -13,8 +13,8 @@ RUN npm install
 # Copy the entire application to the working directory
 COPY . .
 
-# Build the React.js application
-RUN npm build
+# Expose the port on which the application will run
+EXPOSE 8080
 
 # Command to start the application
 CMD ["npm", "start"]
