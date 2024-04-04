@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React.js application
-RUN npm run build
+RUN npm build
 
 # Command to start the application
 CMD ["npm", "start"]
