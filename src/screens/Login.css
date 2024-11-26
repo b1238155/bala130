@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+.app{
+    display:flex;
+
+}
+.division-left{
+    display: grid;
+    align-items:'center';
+    justify-content: center;
+
+}
+.division-right{
+    display: grid;
+    align-items:'center';
+    justify-content: center;
+
+}
+.logo{
+    display: grid;
+    margin-top: 30px;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+.image{
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+.loginhead{
+    color: #9AC037;
+    font-weight: 700;
+    font-size: 25px;
+    
+
+}
+.login-form{
+    
+    justify-content: center; 
+    align-items: center;
+ 
+}
+.login-form p{
+    font-size: 16px;
+    color: #818181;
+    font-weight: 400;
+}
+.form-control{
+    height: 60px;
+    width: 434px;
+    border-radius: 10px;
+    color:#3A4175;
+    font-weight: 500;
+
+}
+.custom-checkbox:checked {
+    background-color:#3A4175;
+  }
+      
+.form-control:active{
+    border-color: #3A4175;
+}
+.button{
+    height: 60px;
+    width: 434px;
+    background-color: #3A4175;
+    border-radius: 10px;
+    color:#ffffff;
+    border-color:white;
+}
+.button:hover{
+    background-color:#3A4175;
+    opacity: 0.9
+
+}
+
+@media (max-width: 767px) {
+    /* CSS for mobile screens */
+    .app{
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+    }
+    .division{
+        display: grid;
+        justify-content: center;
+
+    }
+    .division-right{
+        padding: '5%';
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS for tablet screens */
+    .division{
+        display: grid;
+
+        
+    }
+    .app{
+        flex-direction: row;
+    }
+    .logo{
+        height:20vh;
+        width: 50vh;
+        justify-self: center;
+
+    }
+    .image{
+        height:100vh;
+        width: 60vh;
+    }
+    
+
+  }
+
+  @media (min-width: 992px) {
+    /* CSS for desktop screens */
+
+  }

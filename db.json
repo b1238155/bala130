@@ -1,0 +1,25 @@
+{
+  "batches":[
+    {
+        "id":1,
+    "Batchno":"56577" ,
+   "batchSize":"6",
+     "packing":"normal",
+    "mfgdate" :"06/01/2023",
+     "expdate":"06/01/2023",
+  "retestdate": "06/01/2023",
+      "sample": "sodium"  
+     },
+
+     {
+        "id":2,
+        "Batchno":"56577" ,
+       "batchSize":"6",
+         "packing":"normal",
+        "mfgdate" :"06/01/2023",
+         "expdate":"06/01/2023",
+      "retestdate": "06/01/2023",
+          "sample": "monosodium" 
+     }
+]
+}

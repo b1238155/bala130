@@ -1,0 +1,23 @@
+{"users":[
+   {
+  "userName":"sro",
+  "email":"revinlabsro@gmail.com",
+  "password":"srorevinlab"
+  },
+  {
+    "userName":"analyst",
+  "email":"revinlabanalyst@gmail.com",
+  "password":"analystrevinlab"
+  },
+  {
+  "userName":"reviewer",
+  "email":"revinlabreviewer@gmail.com",
+  "password":"reviewerrevinlab"
+  },
+  {
+    "userName":"approver",
+  "email":"revinlabapprover@gmail.com",
+  "password":"approverrevinlab"
+  }
+]
+}
